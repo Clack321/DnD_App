@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="index.css">
+    <title>DnD Character Creator</title>
+</head>
+<body>
+    <div id="outer-form-box">
+        <form action="nowhere" method="post" id="inner-form-box">
+            <div id="row1">
+                <label for="input-name">Enter the name for your character:  
+                    <input type="text" placeholder="name" id="input-name" name="input-name">
+                </label>
+                <label for="choose-class">Choose Your Class:  
+                    <select name="choose-class" id="choose-class">
+                        <option value="Barbarian">Barbarian</option>
+                        <option value="Bard">Bard</option>
+                        <option value="Cleric">Cleric</option>
+                        <option value="Druid">Druid</option>
+                        <option value="Fighter">Fighter</option>
+                        <option value="Monk">Monk</option>
+                        <option value="Paladin">Paladin</option>
+                        <option value="Ranger">Ranger</option>
+                        <option value="Rouge">Rouge</option>
+                        <option value="Sorcerer">Sorcerer</option>
+                        <option value="Warlock">Warlock</option>
+                        <option value="Wizard">Wizard</option>
+                    </select>
+                </label>
+                <label for="choose-race">Choose Your Race:  
+                    <select name="choose-race" id="choose-race">
+                        <option value="Aarakocra">Aarakocra</option>
+                        <option value="Aasimar">Aasimar</option>
+                        <option value="Bugbear">Bugbear</option>
+                        <option value="Centaur">Centaur</option>
+                        <option value="Changeling">Changeling</option>
+                        <option value="Dragonborn">Dragonborn</option>
+                        <option value="Dwarf">Dwarf</option>
+                        <option value="Elf">Elf</option>
+                        <option value="FearlTiefling">FearlTiefling</option>
+                        <option value="Firblog">Firblog</option>
+                        <option value="Genasi">Genasi</option>
+                        <option value="Gith">Gith</option>
+                        <option value="Gnome">Gnome</option>
+                        <option value="Goblin">Goblin</option>
+                        <option value="Goliath">Goliath</option>
+                        <option value="Half-Elf">Half-Elf</option>
+                        <option value="Halfing">Halfing</option>
+                        <option value="Half-Orc">Half-Orc</option>
+                        <option value="Hobgoblin">Hobgoblin</option>
+                        <option value="Human">Human</option>
+                        <option value="Kalashtar">Kalashtar</option>
+                        <option value="Kenku">Kenku</option>
+                        <option value="Kobold">Kobold</option>
+                        <option value="Lizardfolk">Lizardfolk</option>
+                        <option value="Loxodon">Loxodon</option>
+                        <option value="Minotaur">Minotaur</option>
+                        <option value="Orc">Orc</option>
+                        <option value="Shifter">Shifter</option>
+                        <option value="SimicHybrid">Simic Hybrid</option>
+                        <option value="Tabaxi">Tabaxi</option>
+                        <option value="Tiefling">Tiefling</option>
+                        <option value="Tortle">Tortle</option>
+                        <option value="Triton">Triton</option>
+                        <option value="Vedalken">Vedalken</option>
+                        <option value="Viashino">Viashino</option>
+                        <option value="Lizardfolk">Lizardfolk</option>
+                        <option value="Yuan-tiPureblood">Yuan-tiPureblood</option>
+                    </select>
+                </label>
+            </div>
+            <div id="row2">
+                <label for="random-class">Choose Random Class:  
+                    <input type="checkbox" name="random-class" value="Bike" id="ran-class">
+                </label>  
+                <label for="random-race">Choose Random Race:  
+                    <input type="checkbox" name="random-race" value="Bike" id="ran-race"> 
+                    </label>
+                <label for="level-slider">Select a level:  
+                    <input type="range" name="level-slider" min="1" max="20" id="level-slider">
+                </label>
+            </div>
+        </form>
+        <button type="button">Create Character</button>
+    </div>
+    <div id="output-box">
+        <div class="stat-label-box">
+            <p class="class">Class:        </p>
+            <p class="race">Race:         </p>
+            <p class="dex">Dexterity:    </p>
+            <p class="const">Constitution: </p>
+            <p class="int">Intelligence: </p>
+            <p class="wis">Wisdom:       </p>
+            <p class="char">Charisma:     </p>
+            <p class="str">Strength:     </p>
+        </div>
+        <div class="stat-label-box">
+            <p class="dex-mod">Dex Modifier:   </p>
+            <p class="const-mod">Const Modifier: </p>
+            <p class="int-mod">Int Modifier:   </p>
+            <p class="wis-mod">Wis Modifier:   </p>
+            <p class="char-mod">Char Modifier:  </p>
+            <p class="str-mod">Str Modifier:   </p>
+        </div>
+        <div class="stat-label-box">
+            <p class="race-dex-mod">Race Dex Modifier:   </p>
+            <p class="race-const-mod">Race Const Modifier: </p>
+            <p class="race-int-mod">Race Int Modifier:   </p>
+            <p class="race-wis-mod">Race Wis Modifier:   </p>
+            <p class="race-char-mod">Race Char Modifier:  </p>
+            <p class="race-str-mod">Race Str Modifier:   </p>
+        </div>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
