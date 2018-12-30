@@ -140,7 +140,7 @@ function roll_Race() {
     return Math.floor(Math.random() * 37 + 1);
  }
 
-function character() {
+/*function character() {
 
     this.strength = getRoll();
     this.dexterity = getRoll();
@@ -163,12 +163,10 @@ function character() {
     this.raceWisMod = calc_Modifier(this.widsom);
     this.raceCharMod = calc_Modifier(this.charisma);
     
-}
-function charcter() {
-  strength => {
+}*/
+function main() {
 
-  },
-  dexterity = 55;
 }
+$(main);
 
 
